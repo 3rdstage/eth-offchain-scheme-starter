@@ -4,7 +4,7 @@
 ```sql
 --------------------------------------------------
 --
--- DDL Script for MariaDB 
+-- DDL Script for MariaDB
 --
 --------------------------------------------------
 CREATE DATABASE IF NOT EXISTS `eth`
@@ -14,7 +14,7 @@ CREATE DATABASE IF NOT EXISTS `eth`
 USE `eth`;
 
 --------------------------------------------------
--- Table `chain` 
+-- Table `chain`
 --------------------------------------------------
 CREATE TABLE IF NOT EXISTS `chain` (
   `id` INT NOT NULL COMMENT 'chain ID',
@@ -29,7 +29,7 @@ DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_unicode_ci;
 
 --------------------------------------------------
--- Table `eth_acct` 
+-- Table `eth_acct`
 --------------------------------------------------
 CREATE TABLE IF NOT EXISTS `eth_acct` (
   `chain_id` INT NOT NULL COMMENT 'Ethereum network',
@@ -51,7 +51,10 @@ DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_unicode_ci
 COMMENT = 'Ethereum account - EOA or proxy address';
 
-ALTER TABLE `eth_acct` 
-ADD CONSTRAINT `eth_acct_chk_addr` CHECK(`addr` RLIKE '^(?-i)0x[0-9a-f]+$');
+ALTER TABLE `eth_acct`
+ADD CONSTRAINT `eth_acct_chk_addr` CHECK(`addr` RLIKE '^0x[[:digit:][:lower:]]+$');
+-- ALTER TABLE `eth_acct`
+-- ADD CONSTRAINT `eth_acct_chk_addr` CHECK(`addr` RLIKE '^(?-i)0x[0-9a-f]+$');
+
 
 ```
