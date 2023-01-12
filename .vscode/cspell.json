@@ -1,0 +1,50 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "websocket", // Techonology Geneal
+    "reentrancy",
+    "consolas", // Fonts
+    "lucida",
+    "menlo",
+    "webp", // Extensions
+    "addn", // `bn.js`
+    "subn",
+    "pickone", // `chance.js`
+    "pickset",
+    "varchar", // Database, DBMS
+    "varchar2",
+    "innodb", // MySQL
+    "rlike", // MariaDB
+    "keccak", // Blockchain
+    "secp256k1",
+    "ipfs",
+    "soulbound",
+    "struct", // Ethereum
+    "bytecode",
+    "yellowpaper",
+    "erc",
+    "ierc",
+    "inheritdoc",
+    "vyper",
+    "remixd",
+    "solhint",
+    "Mythril",
+    "MythX",
+    "ConsenSys",
+    "OpenZeppelin",
+    "plantuml", // PlantUML
+    "skinparam",
+    "startuml",
+    "enduml",
+    "startmindmap",
+    "endmindmap",
+    "addr", // General Abbreviations
+    "addrs",
+    "contr", // contract
+    "contrs",
+    "descr", // description
+    "fctr", // factory
+    "rslt" // result
+  ]
+}
