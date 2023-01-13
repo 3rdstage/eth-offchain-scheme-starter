@@ -52,9 +52,9 @@ COLLATE = utf8mb4_unicode_ci
 COMMENT = 'Ethereum account - EOA or proxy address';
 
 ALTER TABLE `eth_acct`
-ADD CONSTRAINT `eth_acct_chk_addr` CHECK(`addr` RLIKE '^0x[[:digit:][:lower:]]+$');
+ADD CONSTRAINT `eth_acct_chk_addr` CHECK(`addr` RLIKE '^(?-i)0x[0-9a-f]+$');
 -- ALTER TABLE `eth_acct`
--- ADD CONSTRAINT `eth_acct_chk_addr` CHECK(`addr` RLIKE '^(?-i)0x[0-9a-f]+$');
+-- ADD CONSTRAINT `eth_acct_chk_addr` CHECK(`addr` RLIKE '^0x[[:digit:][:lower:]]+$');
 
 
 ```
