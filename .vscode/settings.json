@@ -37,10 +37,7 @@
 
   "jshint.enable" : true,
   "jshint.config": ".jshintrc",
-
-  "cSpell.enableFiletypes": [
-    "solidity"
-  ],
+  //"jshint.nodePath": "/Users/3rdstage/.nvm/versions/node/v14.19.0/lib/node_modules/",
 
   "plantuml.fileExtensions": ".pu,.puml,.plantuml",
   "plantuml.exportSubFolder": false,
